@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{3C7502D7-D6BA-41B5-ABA2-768FD878FFD0}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>SpineUnityEditor</RootNamespace>
+        <AssemblyName>SpineUnityEditor</AssemblyName>
+        <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>C:\Program Files\Unity2017\Editor\Data\Managed\UnityEditor.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEditor.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>C:\Program Files\Unity2017\Editor\Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>C:\Program Files\Unity2017\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\AnimationReferenceAssetEditor.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\AssetDatabaseAvailabilityDetector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\BoneFollowerInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\Menus.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\PointFollowerEditor.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonAnimationInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonBaker.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonBakingWindow.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonDataAssetInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonDebugWindow.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonMecanimInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonRendererInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineAtlasAssetInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineAttributeDrawers.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineEditorUtilities.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineInspectorUtility.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineMaskUtilities.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\BoundingBoxFollower\Editor\BoundingBoxFollowerInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\CustomMaterials\Editor\SkeletonRendererCustomMaterialsInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdoll2DInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdollInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Shaders\Sprite\Editor\SpineSpriteShaderGUI.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonGraphic\Editor\BoneFollowerGraphicInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonGraphic\Editor\SkeletonGraphicInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Timeline\Editor\SpineAnimationStateDrawer.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Timeline\Editor\SpineSkeletonFlipDrawer.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs" />
+        <Compile Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="..\..\spine-unity\Assets\Spine Examples.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity-editor.asmdef" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity-editor.asmdef.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\AnimationReferenceAssetEditor.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\AssetDatabaseAvailabilityDetector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\BoneFollowerInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\AtlasAsset Icon.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\AtlasAsset Icon.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-animation.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-animation.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-animationRoot.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-animationRoot.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-attachment.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-attachment.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-bone.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-bone.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-boneNib.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-boneNib.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-boundingBox.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-boundingBox.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-clipping.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-clipping.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintIK.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintIK.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintNib.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintNib.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintPath.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintPath.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraints.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraints.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintTransform.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-constraintTransform.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-event.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-event.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-hingeChain.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-hingeChain.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-image.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-image.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-mesh.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-mesh.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-null.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-null.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-path.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-path.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-point.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-point.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-poseBones.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-poseBones.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skeleton.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skeleton.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skeletonUtility.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skeletonUtility.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skin.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skin.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skinPlaceholder.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skinPlaceholder.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skinsRoot.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-skinsRoot.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-slot.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-slot.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-slotRoot.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-slotRoot.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-spine.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-spine.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-subMeshRenderer.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-subMeshRenderer.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-warning.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-warning.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-weights.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\icon-weights.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\GUI\SkeletonDataAsset Icon.png.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\Menus.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\PointFollowerEditor.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\Resources.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonAnimationInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonBaker.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonBakingWindow.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonDataAssetInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonDebugWindow.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonMecanimInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SkeletonRendererInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineAtlasAssetInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineAttributeDrawers.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineEditorUtilities.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineInspectorUtility.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Editor\SpineMaskUtilities.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\BoundingBoxFollower.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\BoundingBoxFollower\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\BoundingBoxFollower\Editor\BoundingBoxFollowerInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\CustomMaterials.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\CustomMaterials\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\CustomMaterials\Editor\SkeletonRendererCustomMaterialsInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Ragdoll.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Ragdoll\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdoll2DInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdollInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Shaders.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Shaders\Sprite.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Shaders\Sprite\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Shaders\Sprite\Editor\SpineSpriteShaderGUI.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonGraphic.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonGraphic\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonGraphic\Editor\BoneFollowerGraphicInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonGraphic\Editor\SkeletonGraphicInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Timeline.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Timeline\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Timeline\Editor\SpineAnimationStateDrawer.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\Modules\Timeline\Editor\SpineSkeletonFlipDrawer.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\SkeletonUtility.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\SkeletonUtility\Editor.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Editor\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\Runtime.meta" />
+      <Content Include="..\..\spine-unity\Assets\Spine\version.txt" />
+      <Content Include="..\..\spine-unity\Assets\Spine\version.txt.meta" />
+      <Content Include="..\..\spine-unity\LICENSE" />
+      <Content Include="..\..\spine-unity\README.md" />
+      <Content Include="..\..\spine-unity\README.pdf" />
+      <Content Include="..\..\spine-unity\Spine.mdpolicy" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\SpineCsharp\SpineCsharp.csproj">
+        <Project>{4cc716f2-f79c-470f-a2e4-bfdfe52ffb9c}</Project>
+        <Name>SpineCsharp</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\SpineUnity\SpineUnity.csproj">
+        <Project>{971454c0-7d07-4d11-be5a-52df825d71af}</Project>
+        <Name>SpineUnity</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
