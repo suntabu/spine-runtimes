@@ -42,16 +42,16 @@ namespace Spine {
 	public class Bone : IUpdatable {
 		static public bool yDown;
 
-		internal BoneData data;
-		internal Skeleton skeleton;
-		internal Bone parent;
+		public BoneData data;
+		public Skeleton skeleton;
+		public Bone parent;
 		internal ExposedList<Bone> children = new ExposedList<Bone>();
-		internal float x, y, rotation, scaleX, scaleY, shearX, shearY;
-		internal float ax, ay, arotation, ascaleX, ascaleY, ashearX, ashearY;
-		internal bool appliedValid;
+		public float x, y, rotation, scaleX, scaleY, shearX, shearY;
+		public float ax, ay, arotation, ascaleX, ascaleY, ashearX, ashearY;
+		public bool appliedValid;
 
-		internal float a, b, worldX;
-		internal float c, d, worldY;
+		public float a, b, worldX;
+		public float c, d, worldY;
 
 		internal bool sorted;
 
@@ -258,7 +258,7 @@ namespace Spine {
 		/// 
 		/// Some information is ambiguous in the world transform, such as -1,-1 scale versus 180 rotation.
 		/// </summary>
-		internal void UpdateAppliedTransform () {
+		public void UpdateAppliedTransform () {
 			appliedValid = true;
 			Bone parent = this.parent;
 			if (parent == null) {

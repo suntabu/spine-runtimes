@@ -43,10 +43,10 @@ namespace Spine {
 		const int NONE = -1, BEFORE = -2, AFTER = -3;
 		const float Epsilon = 0.00001f;
 
-		internal PathConstraintData data;
+		public PathConstraintData data;
 		internal ExposedList<Bone> bones;
 		internal Slot target;
-		internal float position, spacing, rotateMix, translateMix;
+		public float position, spacing, rotateMix, translateMix;
 
 		internal ExposedList<float> spaces = new ExposedList<float>(), positions = new ExposedList<float>();
 		internal ExposedList<float> world = new ExposedList<float>(), curves = new ExposedList<float>(), lengths = new ExposedList<float>();

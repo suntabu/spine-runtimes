@@ -37,7 +37,7 @@ namespace Spine {
 	/// A simple container for a list of timelines and a name.</summary>
 	public class Animation {
 		internal String name;
-		internal ExposedList<Timeline> timelines;
+		public ExposedList<Timeline> timelines;
 		internal float duration;
 
 		public Animation (string name, ExposedList<Timeline> timelines, float duration) {
@@ -188,7 +188,7 @@ namespace Spine {
 		Out
 	}
 
-	internal enum TimelineType {
+	public enum TimelineType {
 		Rotate = 0, Translate, Scale, Shear, //
 		Attachment, Color, Deform, //
 		Event, DrawOrder, //
@@ -303,7 +303,7 @@ namespace Spine {
 		internal const int PREV_TIME = -2, PREV_ROTATION = -1;
 		internal const int ROTATION = 1;
 
-		internal int boneIndex;
+		public int boneIndex;
 		internal float[] frames; // time, degrees, ...
 
 		public RotateTimeline (int frameCount)
@@ -402,7 +402,7 @@ namespace Spine {
 		protected const int PREV_TIME = -3, PREV_X = -2, PREV_Y = -1;
 		protected const int X = 1, Y = 2;
 
-		internal int boneIndex;
+		public int boneIndex;
 		internal float[] frames; // time, x, y, ...
 
 		public TranslateTimeline (int frameCount)
@@ -662,7 +662,7 @@ namespace Spine {
 		protected const int PREV_TIME = -5, PREV_R = -4, PREV_G = -3, PREV_B = -2, PREV_A = -1;
 		protected const int R = 1, G = 2, B = 3, A = 4;
 
-		internal int slotIndex;
+		public int slotIndex;
 		internal float[] frames; // time, r, g, b, a, ...
 
 		public ColorTimeline (int frameCount)
@@ -776,7 +776,7 @@ namespace Spine {
 		protected const int PREV_R2 = -3, PREV_G2 = -2, PREV_B2 = -1;
 		protected const int R = 1, G = 2, B = 3, A = 4, R2 = 5, G2 = 6, B2 = 7;
 
-		internal int slotIndex;
+		public int slotIndex;
 		internal float[] frames; // time, r, g, b, a, r2, g2, b2, ...
 
 		public TwoColorTimeline (int frameCount) :
@@ -918,7 +918,7 @@ namespace Spine {
 
 	/// <summary>Changes a slot's <see cref="Slot.Attachment"/>.</summary>
 	public class AttachmentTimeline : Timeline, ISlotTimeline {
-		internal int slotIndex;
+		public int slotIndex;
 		internal float[] frames; // time, ...
 		internal string[] attachmentNames;
 
@@ -989,8 +989,8 @@ namespace Spine {
 
 	/// <summary>Changes a slot's <see cref="Slot.AttachmentVertices"/> to deform a <see cref="VertexAttachment"/>.</summary>
 	public class DeformTimeline : CurveTimeline, ISlotTimeline {
-		internal int slotIndex;
-		internal VertexAttachment attachment;
+		public int slotIndex;
+		public VertexAttachment attachment;
 		internal float[] frames; // time, ...
 		internal float[][] frameVertices;
 
@@ -1355,7 +1355,7 @@ namespace Spine {
 		private const int PREV_TIME = -5, PREV_MIX = -4, PREV_BEND_DIRECTION = -3, PREV_COMPRESS = -2, PREV_STRETCH = -1;
 		private const int MIX = 1, BEND_DIRECTION = 2, COMPRESS = 3, STRETCH = 4;
 
-		internal int ikConstraintIndex;
+		public int ikConstraintIndex;
 		internal float[] frames; // time, mix, bendDirection, compress, stretch, ...
 
 		public IkConstraintTimeline (int frameCount)
@@ -1470,7 +1470,7 @@ namespace Spine {
 		private const int PREV_TIME = -5, PREV_ROTATE = -4, PREV_TRANSLATE = -3, PREV_SCALE = -2, PREV_SHEAR = -1;
 		private const int ROTATE = 1, TRANSLATE = 2, SCALE = 3, SHEAR = 4;
 
-		internal int transformConstraintIndex;
+		public int transformConstraintIndex;
 		internal float[] frames; // time, rotate mix, translate mix, scale mix, shear mix, ...
 
 		public TransformConstraintTimeline (int frameCount)
@@ -1573,7 +1573,7 @@ namespace Spine {
 		protected const int PREV_TIME = -2, PREV_VALUE = -1;
 		protected const int VALUE = 1;
 
-		internal int pathConstraintIndex;
+		public int pathConstraintIndex;
 		internal float[] frames; // time, position, ...
 
 		public PathConstraintPositionTimeline (int frameCount)
@@ -1695,7 +1695,7 @@ namespace Spine {
 		private const int PREV_TIME = -3, PREV_ROTATE = -2, PREV_TRANSLATE = -1;
 		private const int ROTATE = 1, TRANSLATE = 2;
 
-		internal int pathConstraintIndex;
+		public int pathConstraintIndex;
 		internal float[] frames; // time, rotate mix, translate mix, ...
 
 		public PathConstraintMixTimeline (int frameCount)

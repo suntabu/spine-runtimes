@@ -33,13 +33,13 @@ using System;
 namespace Spine {
 	public class SlotData {
 		internal int index;
-		internal string name;
+		public string name;
 		internal BoneData boneData;
-		internal float r = 1, g = 1, b = 1, a = 1;
-		internal float r2 = 0, g2 = 0, b2 = 0;
+		public float r = 1, g = 1, b = 1, a = 1;
+		public float r2 = 0, g2 = 0, b2 = 0;
 		internal bool hasSecondColor = false;
-		internal string attachmentName;
-		internal BlendMode blendMode;
+		public string attachmentName;
+		public BlendMode blendMode;
 
 		public int Index { get { return index; } }
 		public string Name { get { return name; } }

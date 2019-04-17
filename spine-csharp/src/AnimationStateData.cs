@@ -37,7 +37,7 @@ namespace Spine {
 	public class AnimationStateData {
 		internal SkeletonData skeletonData;
 		readonly Dictionary<AnimationPair, float> animationToMixTime = new Dictionary<AnimationPair, float>(AnimationPairComparer.Instance);
-		internal float defaultMix;
+		public float defaultMix;
 
 		/// <summary>The SkeletonData to look up animations when they are specified by name.</summary>
 		public SkeletonData SkeletonData { get { return skeletonData; } }

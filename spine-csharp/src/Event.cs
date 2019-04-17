@@ -37,7 +37,7 @@ namespace Spine {
 		internal readonly float time;
 		internal int intValue;
 		internal float floatValue;
-		internal string stringValue;
+		public string stringValue;
 		internal float volume;
 		internal  float balance;
 

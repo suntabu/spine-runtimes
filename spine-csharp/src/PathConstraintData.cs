@@ -39,8 +39,8 @@ namespace Spine {
 		internal PositionMode positionMode;
 		internal SpacingMode spacingMode;
 		internal RotateMode rotateMode;
-		internal float offsetRotation;
-		internal float position, spacing, rotateMix, translateMix;
+		public float offsetRotation;
+		public float position, spacing, rotateMix, translateMix;
 
 		public string Name { get { return name; } }
 		public int Order { get { return order; } set { order = value; } }

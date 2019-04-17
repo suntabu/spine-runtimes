@@ -33,13 +33,14 @@ using System;
 namespace Spine {
 	/// <summary>Attachment that displays a texture region using a mesh.</summary>
 	public class MeshAttachment : VertexAttachment, IHasRendererObject {
-		internal float regionOffsetX, regionOffsetY, regionWidth, regionHeight, regionOriginalWidth, regionOriginalHeight;
+		public float regionOffsetX, regionOffsetY, regionWidth, regionHeight, regionOriginalWidth, regionOriginalHeight;
 		private MeshAttachment parentMesh;
-		internal float[] uvs, regionUVs;
-		internal int[] triangles;
-		internal float r = 1, g = 1, b = 1, a = 1;
-		internal int hulllength;
-		internal bool inheritDeform;
+		public float[] uvs;
+		public float[] regionUVs;
+		public int[] triangles;
+		public float r = 1, g = 1, b = 1, a = 1;
+		public int hulllength;
+		public bool inheritDeform;
 
 		public int HullLength { get { return hulllength; } set { hulllength = value; } }
 		public float[] RegionUVs { get { return regionUVs; } set { regionUVs = value; } }

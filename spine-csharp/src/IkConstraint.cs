@@ -39,12 +39,12 @@ namespace Spine {
 	/// See <a href="http://esotericsoftware.com/spine-ik-constraints">IK constraints</a> in the Spine User Guide.</para>
 	/// </summary>
 	public class IkConstraint : IConstraint {
-		internal IkConstraintData data;
+		public IkConstraintData data;
 		internal ExposedList<Bone> bones = new ExposedList<Bone>();
-		internal Bone target;
-		internal int bendDirection;
-		internal bool compress, stretch;
-		internal float mix = 1;
+		public Bone target;
+		public int bendDirection;
+		public bool compress, stretch;
+		public float mix = 1;
 
 		public IkConstraint (IkConstraintData data, Skeleton skeleton) {
 			if (data == null) throw new ArgumentNullException("data", "data cannot be null.");

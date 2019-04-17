@@ -37,7 +37,7 @@ namespace Spine {
 	/// <a href="http://esotericsoftware.com/spine-runtime-skins">Runtime skins</a> in the Spine Runtimes Guide.</para>
 	/// </summary>
 	public class Skin {
-		internal string name;
+		public string name;
 		private Dictionary<AttachmentKeyTuple, Attachment> attachments =
 			new Dictionary<AttachmentKeyTuple, Attachment>(AttachmentKeyTupleComparer.Instance);
 

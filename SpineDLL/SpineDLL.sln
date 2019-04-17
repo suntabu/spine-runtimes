@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineUnityEditor", "SpineUnityEditor\SpineUnityEditor.csproj", "{CA28A529-8BFA-4036-AA4C-CC51D03B72A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineUnity", "SpineUnity\SpineUnity.csproj", "{971454C0-7D07-4D11-BE5A-52DF825D71AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineCsharp", "SpineCsharp\SpineCsharp.csproj", "{4CC716F2-F79C-470F-A2E4-BFDFE52FFB9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA28A529-8BFA-4036-AA4C-CC51D03B72A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA28A529-8BFA-4036-AA4C-CC51D03B72A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA28A529-8BFA-4036-AA4C-CC51D03B72A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA28A529-8BFA-4036-AA4C-CC51D03B72A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971454C0-7D07-4D11-BE5A-52DF825D71AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971454C0-7D07-4D11-BE5A-52DF825D71AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971454C0-7D07-4D11-BE5A-52DF825D71AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971454C0-7D07-4D11-BE5A-52DF825D71AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC716F2-F79C-470F-A2E4-BFDFE52FFB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC716F2-F79C-470F-A2E4-BFDFE52FFB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC716F2-F79C-470F-A2E4-BFDFE52FFB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC716F2-F79C-470F-A2E4-BFDFE52FFB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

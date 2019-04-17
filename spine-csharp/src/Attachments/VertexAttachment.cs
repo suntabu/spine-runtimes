@@ -37,9 +37,9 @@ namespace Spine {
 		static readonly Object nextIdLock = new Object();
 
 		internal readonly int id;
-		internal int[] bones;
-		internal float[] vertices;
-		internal int worldVerticesLength;
+		public int[] bones;
+		public float[] vertices;
+		public int worldVerticesLength;
 
 		/// <summary>Gets a unique ID for this attachment.</summary>
 		public int Id { get { return id; } }

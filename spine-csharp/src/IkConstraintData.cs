@@ -38,9 +38,9 @@ namespace Spine {
 		internal int order;
 		internal List<BoneData> bones = new List<BoneData>();
 		internal BoneData target;
-		internal int bendDirection = 1;
-		internal bool compress, stretch, uniform;
-		internal float mix = 1;
+		public int bendDirection = 1;
+		public bool compress, stretch, uniform;
+		public float mix = 1;
 
 		/// <summary>The IK constraint's name, which is unique within the skeleton.</summary>
 		public string Name {

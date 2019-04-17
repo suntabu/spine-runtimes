@@ -33,19 +33,19 @@ using System.Collections.Generic;
 
 namespace Spine {
 	public class Skeleton {
-		internal SkeletonData data;
-		internal ExposedList<Bone> bones;
-		internal ExposedList<Slot> slots;
-		internal ExposedList<Slot> drawOrder;
-		internal ExposedList<IkConstraint> ikConstraints;
-		internal ExposedList<TransformConstraint> transformConstraints;
-		internal ExposedList<PathConstraint> pathConstraints;
-		internal ExposedList<IUpdatable> updateCache = new ExposedList<IUpdatable>();
-		internal ExposedList<Bone> updateCacheReset = new ExposedList<Bone>();
-		internal Skin skin;
-		internal float r = 1, g = 1, b = 1, a = 1;
+		public SkeletonData data;
+		public ExposedList<Bone> bones;
+		public ExposedList<Slot> slots;
+		public ExposedList<Slot> drawOrder;
+		public ExposedList<IkConstraint> ikConstraints;
+		public ExposedList<TransformConstraint> transformConstraints;
+		public ExposedList<PathConstraint> pathConstraints;
+		public ExposedList<IUpdatable> updateCache = new ExposedList<IUpdatable>();
+		public ExposedList<Bone> updateCacheReset = new ExposedList<Bone>();
+		public Skin skin;
+		public float r = 1, g = 1, b = 1, a = 1;
 		internal float time;
-		internal float scaleX = 1, scaleY = 1;
+		public float scaleX = 1, scaleY = 1;
 		internal float x, y;
 
 		public SkeletonData Data { get { return data; } }

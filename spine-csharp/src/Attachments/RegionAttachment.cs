@@ -42,10 +42,11 @@ namespace Spine {
 		public const int BRX = 6;
 		public const int BRY = 7;
 
-		internal float x, y, rotation, scaleX = 1, scaleY = 1, width, height;
-		internal float regionOffsetX, regionOffsetY, regionWidth, regionHeight, regionOriginalWidth, regionOriginalHeight;
-		internal float[] offset = new float[8], uvs = new float[8];
-		internal float r = 1, g = 1, b = 1, a = 1;
+		public float x, y, rotation, scaleX = 1, scaleY = 1, width, height;
+		public float regionOffsetX, regionOffsetY, regionWidth, regionHeight, regionOriginalWidth, regionOriginalHeight;
+		public float[] offset = new float[8];
+		public float[] uvs = new float[8];
+		public float r = 1, g = 1, b = 1, a = 1;
 
 		public float X { get { return x; } set { x = value; } }
 		public float Y { get { return y; } set { y = value; } }

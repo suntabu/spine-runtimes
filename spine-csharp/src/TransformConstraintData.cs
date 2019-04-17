@@ -36,8 +36,8 @@ namespace Spine {
 		internal int order;
 		internal ExposedList<BoneData> bones = new ExposedList<BoneData>();
 		internal BoneData target;
-		internal float rotateMix, translateMix, scaleMix, shearMix;
-		internal float offsetRotation, offsetX, offsetY, offsetScaleX, offsetScaleY, offsetShearY;
+		public float rotateMix, translateMix, scaleMix, shearMix;
+		public float offsetRotation, offsetX, offsetY, offsetScaleX, offsetScaleY, offsetShearY;
 		internal bool relative, local;
 
 		public string Name { get { return name; } }

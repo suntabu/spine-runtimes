@@ -38,14 +38,14 @@ namespace Spine {
 	/// across multiple skeletons.
 	/// </summary>
 	public class Slot {
-		internal SlotData data;
-		internal Bone bone;
-		internal float r, g, b, a;
-		internal float r2, g2, b2;
+		public SlotData data;
+		public Bone bone;
+		public float r, g, b, a;
+		public float r2, g2, b2;
 		internal bool hasSecondColor;
-		internal Attachment attachment;
+		public Attachment attachment;
 		internal float attachmentTime;
-		internal ExposedList<float> attachmentVertices = new ExposedList<float>();
+		public ExposedList<float> attachmentVertices = new ExposedList<float>();
 
 		public Slot (SlotData data, Bone bone) {
 			if (data == null) throw new ArgumentNullException("data", "data cannot be null.");

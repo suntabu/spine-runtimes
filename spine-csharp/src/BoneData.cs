@@ -33,11 +33,11 @@ using System;
 namespace Spine {
 	public class BoneData {
 		internal int index;
-		internal string name;
-		internal BoneData parent;
-		internal float length;
-		internal float x, y, rotation, scaleX = 1, scaleY = 1, shearX, shearY;
-		internal TransformMode transformMode = TransformMode.Normal;
+		public string name;
+		public BoneData parent;
+		public float length;
+		public float x, y, rotation, scaleX = 1, scaleY = 1, shearX, shearY;
+		public TransformMode transformMode = TransformMode.Normal;
 
 		/// <summary>The index of the bone in Skeleton.Bones</summary>
 		public int Index { get { return index; } }

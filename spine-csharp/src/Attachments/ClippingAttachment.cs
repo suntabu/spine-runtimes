@@ -32,7 +32,7 @@ using System;
 
 namespace Spine {
     public class ClippingAttachment : VertexAttachment {
-        internal SlotData endSlot;
+        public SlotData endSlot;
 
         public SlotData EndSlot { get { return endSlot; } set { endSlot = value; } }
 

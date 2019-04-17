@@ -35,15 +35,15 @@ namespace Spine {
 	/// <summary>Stores the setup pose and all of the stateless data for a skeleton.</summary>
 	public class SkeletonData {
 		internal string name;
-		internal ExposedList<BoneData> bones = new ExposedList<BoneData>(); // Ordered parents first
-		internal ExposedList<SlotData> slots = new ExposedList<SlotData>(); // Setup pose draw order.
+		public ExposedList<BoneData> bones = new ExposedList<BoneData>(); // Ordered parents first
+		public ExposedList<SlotData> slots = new ExposedList<SlotData>(); // Setup pose draw order.
 		internal ExposedList<Skin> skins = new ExposedList<Skin>();
-		internal Skin defaultSkin;
+		public Skin defaultSkin;
 		internal ExposedList<EventData> events = new ExposedList<EventData>();
-		internal ExposedList<Animation> animations = new ExposedList<Animation>();
-		internal ExposedList<IkConstraintData> ikConstraints = new ExposedList<IkConstraintData>();
-		internal ExposedList<TransformConstraintData> transformConstraints = new ExposedList<TransformConstraintData>();
-		internal ExposedList<PathConstraintData> pathConstraints = new ExposedList<PathConstraintData>();
+		public ExposedList<Animation> animations = new ExposedList<Animation>();
+		public ExposedList<IkConstraintData> ikConstraints = new ExposedList<IkConstraintData>();
+		public ExposedList<TransformConstraintData> transformConstraints = new ExposedList<TransformConstraintData>();
+		public ExposedList<PathConstraintData> pathConstraints = new ExposedList<PathConstraintData>();
 		internal float width, height;
 		internal string version, hash;
 

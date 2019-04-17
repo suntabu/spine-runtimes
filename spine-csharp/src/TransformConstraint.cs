@@ -39,10 +39,10 @@ namespace Spine {
 	/// See <a href="http://esotericsoftware.com/spine-transform-constraints">Transform constraints</a> in the Spine User Guide.</para>
 	/// </summary>
 	public class TransformConstraint : IConstraint {
-		internal TransformConstraintData data;
+		public TransformConstraintData data;
 		internal ExposedList<Bone> bones;
-		internal Bone target;
-		internal float rotateMix, translateMix, scaleMix, shearMix;
+		public Bone target;
+		public float rotateMix, translateMix, scaleMix, shearMix;
 
 		public TransformConstraint (TransformConstraintData data, Skeleton skeleton) {
 			if (data == null) throw new ArgumentNullException("data", "data cannot be null.");

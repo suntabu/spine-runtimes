@@ -854,7 +854,7 @@ namespace Spine {
 		internal bool loop, holdPrevious;
 		internal float eventThreshold, attachmentThreshold, drawOrderThreshold;
 		internal float animationStart, animationEnd, animationLast, nextAnimationLast;
-		internal float delay, trackTime, trackLast, nextTrackLast, trackEnd, timeScale = 1f;
+		public float delay, trackTime, trackLast, nextTrackLast, trackEnd, timeScale = 1f;
 		internal float alpha, mixTime, mixDuration, interruptAlpha, totalAlpha;
 		internal MixBlend mixBlend = MixBlend.Replace;
 		internal readonly ExposedList<int> timelineMode = new ExposedList<int>();
